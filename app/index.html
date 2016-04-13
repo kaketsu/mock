@@ -1,10 +1,10 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html ng-app="mainApp">
 <head>
   <!-- load angular via CDN -->
   <script src="components/angular/angular.js"></script>
-  
+  <script src="components/angular-route/angular-route.js"></script>
 </head>
 <body ng-controller="mainCtrl">
 
@@ -27,16 +27,18 @@
 
   <!-- MAIN CONTENT AND INJECTED VIEWS -->
   <div id="container">
-    {{message}}
+    <span ng-bind="message"></span>
     <!-- angular templating -->
     <!-- this is where content will be injected -->
-
+    <div ng-view></div>
   </div>
 
   <!-- FOOTER -->
   <footer class="text-center">
     View the tutorial on <a href="http://scotch.io/tutorials/angular-routing-and-templating-tutorial">Scotch.io</a>
   </footer>
+
+  
   <script src="js/index.js"></script>
 </body>
 </html>
