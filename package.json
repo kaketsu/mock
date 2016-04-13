@@ -1,0 +1,11 @@
+{
+  "name": "mock",
+  "version": "0.0.1",
+  "description": "",
+  "author": "huajie",
+  "license": "ISC",
+  "homepage": "https://github.com/kaketsu/mock#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
