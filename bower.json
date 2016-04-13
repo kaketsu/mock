@@ -1,0 +1,8 @@
+{
+  "name": "mock",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3"
+  }
+}
