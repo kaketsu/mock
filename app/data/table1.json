@@ -1,0 +1,18 @@
+[
+ 
+ {
+	"name":"binbin",
+	"age":"30",
+	"gender":"male",
+	"like":"female",
+	"address":"shanghai"
+}
+ 
+ {
+	"name":"CC",
+	"age":"32",
+	"gender":"male",
+	"like":"male",
+	"address":"shanghai"
+	}
+]
