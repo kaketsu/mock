@@ -1,19 +1,22 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html ng-app="mainApp">
+<html>
 <head>
-  <!-- load angular via CDN -->
+  <!-- load angular -->
+  <script src="components/jquery/dist/jquery.js"></script>
   <script src="components/angular/angular.js"></script>
   <script src="components/angular-route/angular-route.js"></script>
+  <script src="components/lodash/dist/lodash.js"></script>
+  <script src="components/restangular/dist/restangular.min.js"></script>
 </head>
-<body ng-controller="mainCtrl">
+<body ng-app="mainApp" ng-controller="mainCtrl">
 
   <!-- HEADER AND NAVBAR -->
   <header>
     <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">Angular Routing Example</a>
+        <span class="navbar-brand" href="/">Angular Routing Example</span>
       </div>
 
       <ul class="nav navbar-nav navbar-right">
@@ -35,10 +38,7 @@
 
   <!-- FOOTER -->
   <footer class="text-center">
-    View the tutorial on <a href="http://scotch.io/tutorials/angular-routing-and-templating-tutorial">Scotch.io</a>
   </footer>
-
-  
   <script src="js/index.js"></script>
 </body>
 </html>

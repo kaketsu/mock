@@ -1,5 +1,5 @@
-var mainApp = angular.module('mainApp',['ngRoute']);
-mainApp.config(function($routeProvider){
+var mainApp = angular.module('mainApp',['ngRoute','restangular']);
+mainApp.config(function($routeProvider,RestangularProvider){
 	$routeProvider
 	.when('/',{
 		templateUrl : 'template/home.html',
