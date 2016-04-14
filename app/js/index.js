@@ -1,5 +1,10 @@
 var mainApp = angular.module('mainApp',['ngRoute','restangular']);
-mainApp.config(function($routeProvider,RestangularProvider){
+mainApp.config(function($locationProvider,$routeProvider,RestangularProvider){
+	$locationProvider.html5Mode({
+  		enabled: true,
+  		requireBase: false
+	});
+
 	$routeProvider
 	.when('/',{
 		templateUrl : 'template/home.html',
@@ -15,6 +20,26 @@ mainApp.config(function($routeProvider,RestangularProvider){
 	});
 	RestangularProvider.setBaseUrl('http://mock.ebay.com/');
 })
+
+
+//factory是创建一个对象
+mainApp.factory('User',function(){
+	var User;
+
+	return User = (function(){
+		function User(){
+			console.log('init');
+		}
+
+		User.prototype.getUserName = function(){
+			return this.name;
+		}
+
+		return User;
+	})();
+})
+
+
 
 mainApp.controller('mainCtrl',function($scope){
 	$scope.message = 'Hello, this is a main controller';
@@ -43,6 +68,8 @@ mainApp.controller('aboutCtrl',function($scope,Restangular){
 		console.log(data);
 	})
 })
-mainApp.controller('contactCtrl',function($scope){
+mainApp.controller('contactCtrl',function($scope,User){
 	$scope.message = 'Hello, this is a contact controller';
+	var user = new User();
+	console.log(user);
 })
