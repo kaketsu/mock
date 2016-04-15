@@ -43,10 +43,11 @@ mainApp.factory('User',function(){
 
 mainApp.controller('mainCtrl',function($scope){
 	$scope.message = 'Hello, this is a main controller';
+	$scope.pageClass = 'page-home';
 })
 mainApp.controller('aboutCtrl',function($scope,Restangular){
 	$scope.message = 'Hello, this is a about controller';
-
+	$scope.pageClass = 'page-abouts';
 	
 	//基本用法
 	/*var info = Restangular.one('data','info.json');
@@ -70,6 +71,7 @@ mainApp.controller('aboutCtrl',function($scope,Restangular){
 })
 mainApp.controller('contactCtrl',function($scope,User){
 	$scope.message = 'Hello, this is a contact controller';
+	$scope.pageClass = 'page-contact';
 	var user = new User();
 	console.log(user);
 })

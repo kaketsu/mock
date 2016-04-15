@@ -3,6 +3,7 @@
 <html>
 <head>
   <!-- load angular -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
   <script src="components/jquery/dist/jquery.js"></script>
   <script src="components/angular/angular.js"></script>
   <script src="components/angular-route/angular-route.js"></script>
@@ -20,9 +21,9 @@
       </div>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="/about"><i class="fa fa-shield"></i> About</a></li>
-        <li><a href="/contact"><i class="fa fa-comment"></i> Contact</a></li>
+        <li><a href="/" class="btn btn-primary btn-lg"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="/about" class="btn btn-success btn-lg"><i class="fa fa-shield"></i> About</a></li>
+        <li><a href="/contact" class="btn btn-info btn-lg"><i class="fa fa-comment"></i> Contact</a></li>
       </ul/
     </div>
     </nav>
@@ -33,7 +34,7 @@
     <span ng-bind="message"></span>
     <!-- angular templating -->
     <!-- this is where content will be injected -->
-    <div ng-view></div>
+    <div ng-view class="page {{pageClass}}"></div>
   </div>
 
   <!-- FOOTER -->
