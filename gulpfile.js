@@ -11,8 +11,7 @@ gulp.task('es6',()=>{
 })
 
 gulp.task('babel',function(){
-    return  
-        gulp.src('app/js.es6/*.js')
+    return  gulp.src('app/js.es6/*.js')
         .pipe(babel({
             presets: ['es2015'],
             plugins : ['transform-async-to-generator','transform-class-properties','transform-function-bind','external-helpers','transform-decorators']
@@ -25,13 +24,12 @@ gulp.task('babel',function(){
 })
 
 gulp.task('babeles6',()=>{
-    return 
-        gulp.src('app/js.es6/*.js')
+    return gulp.src('app/js.es6/*.es6.js')
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(rename( (path)=>{
-            path.basename = path.basename.require(/\.es6$/, '');
+        .pipe(rename((path)=>{
+            path.basename = path.basename.replace(/\.es6$/, '');
         }))
         .pipe(gulp.dest('app/js/'));
 

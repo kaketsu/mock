@@ -1,4 +1,4 @@
-class BasePoint() {
+class BasePoint {
 	constructor(x,y){
 		this.x = x;
 		this.y = y;
