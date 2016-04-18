@@ -6,6 +6,10 @@
   "license": "ISC",
   "homepage": "https://github.com/kaketsu/mock#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "babel": "^6.5.2",
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2"
   }
 }
