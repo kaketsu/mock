@@ -1,0 +1,8 @@
+App.factory('BasePoint',function(){
+	
+})
+
+
+
+
+

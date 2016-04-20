@@ -1,0 +1,26 @@
+[  
+  {
+    "url":"/main",
+    "params":{
+      "name":"main",
+      "templateUrl":"template/home.html",
+      "controller": "mainCtrl"
+    }
+  },
+  {
+    "url":"/about",
+    "params":{
+      "name":"about",
+      "templateUrl":"template/about.html",
+      "controller": "aboutCtrl"
+    }
+  },
+  {
+    "url":"/contact",
+    "params":{
+      "name":"contact",
+      "templateUrl":"template/contact.html",
+      "controller": "contactCtrl"
+    }
+  }
+]
