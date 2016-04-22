@@ -34,5 +34,4 @@
 	Request.open('POST','/data/route.json',true);
 	Request.send();
 
-
 })();
