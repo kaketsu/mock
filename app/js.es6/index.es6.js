@@ -1,7 +1,18 @@
 
 (function(){
 	Config = window.Config = {};
-	window.App = angular.module('app',['Config']);
+	window.App = angular.module('app',['Config','j-service']);
+	
+	// App.factory('myFactory', function(){
+	// 	let myFactory = {};
+	// 	myFactory.name = 'myFactory';
+	// 	return myFactory;
+	// })
+	
+	// App.service('myService', function(){
+	// 	this.name = 'myService';
+	// })
+	
 	//读取基本的json数据
 	function createXMLHttpRequest(){
 		if(window.ActiveXObject){
@@ -12,8 +23,8 @@
 	}
 
 	function registerController(ctrl){
-		angular.module('app').controller(ctrl,['$scope','BasePoint',(scope,BasePoint)=>{
-			console.log();
+		App.controller(ctrl,['$scope','BasePoint',(scope,BasePoint)=>{
+			console.log(BasePoint);
 		}])
 	}
 	
