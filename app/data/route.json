@@ -1,10 +1,10 @@
 [  
   {
-    "url":"/main",
+    "url":"/home",
     "params":{
-      "name":"main",
+      "name":"home",
       "templateUrl":"template/home.html",
-      "controller": "mainCtrl"
+      "controller": "homeCtrl"
     }
   },
   {

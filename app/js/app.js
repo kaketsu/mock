@@ -1,3 +1,1 @@
-'use strict';
-
-App.factory('BasePoint', function () {});
+"use strict";

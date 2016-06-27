@@ -1,11 +1,14 @@
 {
   "name": "mock",
   "version": "0.0.1",
-  "devDependencies": {
+  "dependencies": {
     "angular": "^1.5.3",
     "angular-route": "^1.5.3",
     "restangular": "^1.5.2",
     "jquery": "^2.2.3",
-    "lodash": "^4.11.0"
+    "lodash": "^4.11.0",
+    "datatables": "^1.10.12",
+    "angular-datatables": "^0.5.4",
+    "bootstrap": "^3.3.6"
   }
 }
